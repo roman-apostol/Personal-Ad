@@ -1,1 +1,3 @@
-drop database personal_ad;
+DROP database personal_ad;
+
+COMMIT;
