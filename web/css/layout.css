@@ -1,0 +1,415 @@
+
+
+/* 8. CUSTOM LAYOUT & TYPOGRAPHY (Daddy bear)
+----------------------------------------------------------------------------------------*/
+.container {
+	padding: 0 1.618em;
+	margin: 0 auto; 
+	max-width: 52em;
+	}
+
+aside {
+  float: right;
+  clear: right;
+  width: 18.5em;
+  height:auto;
+  }
+header.header a.logo{
+	float: left;
+	margin-left: 0%;
+}  
+nav ul {
+	text-align: right;
+	margin-right: 0;
+}
+nav ul li:last-child {
+	padding-right: 0;
+}
+
+
+ul.folio li {
+	float: left;
+	width: 38%;
+	margin-right: 8%;
+}
+aside.recent {
+	width: 18.5em;
+	margin-left: 2em;
+	margin-top: 11em;
+	margin-left: 1.618em;
+}
+aside.recent p{
+	margin-top: 2em;
+}
+
+#main .posts .post_body {
+	margin-left: -10000em;
+	padding-left: 10000em;
+	background: #EAEEF1;
+	padding-bottom: 2em;
+}
+#main .posts .post_body p{
+	padding-right: 0em;
+}
+
+
+/* 5.1 Portfolio */
+
+div.image {
+	float: left;
+	width: 30em;
+}
+
+div.description{
+	float: right;
+	width: 17em;
+}
+
+/* 5.2 Archives */
+ul#archives {
+	margin-bottom: 6em;
+}
+ul#archives li {
+	padding: 3em 1em;
+}
+ul#archives li span.when{
+	float: left;
+}
+ul#archives li a{
+	float: left;
+	display: block;
+	font-size: 130%;
+}
+ul#archives li span.cats{
+	float: left;
+	padding-left: 2em;
+}
+ul#archives li span.cats a{
+	margin: 0em 0em 2em 1em;
+	padding-right: 0em;
+	border-bottom: 1px solid #546374;
+}
+
+/* 5.3 single */
+
+#single .post_body{
+	margin-left: -10000em;
+	padding-left: 10007em;
+	padding-right: 0em;
+	clear: none;
+	/*margin-top: 1em;*/
+}
+#single article header {
+	padding-left: 7em;
+}
+#single article .article_img {
+	margin-left: -10000em;
+	padding-left: 9993em;
+	background: rgba(250,250,250, 0.5);
+	max-width: 121.4%;
+	margin-top: 0em;
+}
+#single article img {
+	margin-top: 1em;
+}
+
+#single article p.notes {
+	float: left;
+	margin-left: -7em;
+	width: 10em;
+	padding-right: 2em;
+	font-size: 90%;
+	color: #CB847C;
+}
+#single article .fullwidth {
+	margin-left: -5.4em;
+	max-width: 30.8em;
+	font-size: 130%;
+	margin-top: 1em;
+}
+#single article aside {
+	padding-left: 0em;
+	margin-top: 3em;
+	width: 10em;
+	text-align: right;
+}
+#single article aside ul li{
+	list-style-type: none;
+	float: none;
+	padding: 0em;
+}
+#single article aside ul{
+	float: none;
+}
+#single article aside h3 {
+	margin-top: 2em;
+	float: none;
+}
+#single article footer.meta {
+	margin-left: -10000em;
+	padding-left: 10007em;
+}
+
+/* services */
+.column {
+float: left;
+width: 15.333333333em;
+padding: 1em;
+text-align: left;
+}
+
+.twocolumn {
+float: left;
+width: 30.666666666em;
+padding: 1em;
+text-align: left;
+}
+
+#services H1 {
+	text-align:center;
+	padding: 2em 0 1em 0;
+}
+
+/*journal */
+
+#blog .post_body{
+	margin-left: -10000em;
+	padding-left: 10005em;
+	padding-right: 1em;
+	clear: none;
+	float: left;
+	margin-bottom: 3em;
+	
+}
+
+#blog aside {
+	width:11em ;
+	padding-left: 0.5em;
+	text-align: right;
+}
+#blog aside h3 {
+	font-size: 120%;
+}
+#blog aside ul li{
+	list-style-type: none;
+	padding: 0.7em 0 0;
+}
+#blog aside ul li a{
+	border-bottom: 1px solid #CB847C;
+}
+
+#blog .article_img {
+	margin-top:  -2em;
+}
+
+
+/* 9. CUSTOM LAYOUT & TYPOGRAPHY (Mummy bear)
+----------------------------------------------------------------------------------------*/
+@media screen and (min-width: 30em) and (max-width: 63.236em) {
+
+.container { width: 30em; }
+
+aside {
+  float: none;
+  width: auto;
+  height: auto;
+  margin: 0 0 2.2em;
+  }
+  
+  header.header a.logo{
+  float: none;
+  	display: block;
+  	margin-left: 35%;
+  }
+  
+ 
+header.header p.intro {
+	clear: both;
+	padding: 1em 0em;
+	margin: 1em auto;
+	display: block;
+	text-align: center;
+	font-size: 2em;
+	line-height: 1.3em;
+}
+header nav.menu {
+	float: none;
+}
+nav ul {
+	text-align: center;
+	margin-right: 5%;
+}
+nav ul li:last-child {
+	padding-right: 5%;
+}
+#main {
+	margin-top: 3.618em;
+}
+ul.folio li {
+	float: none;
+	width: 100%;
+	text-align: center;
+	margin-right: 0%;
+}
+ul.folio li:nth-child(2) {
+	margin-top: 2em;
+}
+/*
+ul.folio li:nth-child(2) span{
+	left: 120px;
+	top: -160px;
+}
+*/
+ul.folio li:last-child {
+	margin-right: 0;
+	margin-top: 1em;
+}
+
+h1.calltoaction {
+	padding: 2em 0em;
+}
+   
+article aside{
+	margin-left: 0;
+	width: auto;
+}
+
+aside.recent {
+	width: 30em;
+	margin-left: 0em;
+}
+aside.recent p{
+	margin-left:0em;
+	margin-top: 2em;
+}
+aside.recent h3 {
+	font-size: 110%;
+	margin-left: 0em;
+}
+aside.recent ul {
+	margin-left: 0em;
+}
+aside.recent ul li {
+	list-style-type: none;
+	margin-left: 0;
+	padding: 1em 0 0.1em 0;
+}
+aside.recent ul li a{
+	line-height: 1.6em;
+}
+
+/* single post 
+--------------------------------------*/
+#single article aside {
+	display: none;
+}
+#single article{
+	margin: 1em auto 0;
+}
+
+#single .post_body{
+	margin-left: 0em;
+	padding: 0 1em  ;
+	max-width: 30em;
+	
+}
+#single article header {
+	padding-left: 0em;
+	max-width: 30em;
+}
+#single article header h2{
+	font-size: 150%;
+	max-width: 21em;
+}
+#single article .article_img {
+	margin-left: -1em;
+	margin-right: 0em;
+	padding-left: 0em;
+	background: #FFF;
+	max-width: 107.5%;
+	margin-top: 0em;
+}
+#single article p.notes {
+	float: none;
+	margin-left: 0em;
+	width: 30em;
+	padding-right: 1em;
+	font-size: 90%;
+	color: #FF513D;
+}
+
+#single article .fullwidth {
+	margin-left: 0em;
+	max-width: 100%;
+}
+#single article footer.meta {
+	margin-left: 0em;
+	padding-left: 7em;
+}
+
+#blog .post_body{
+	margin-left: 0em;
+	padding: 0 1em  ;
+	max-width: 30em;
+	
+}
+
+#blog aside {
+	/*float: none;*/
+	width:auto ;
+	padding-left: 2em;
+	text-align: left;
+	
+}
+#blog aside h3 {
+	padding-top: 3em;
+}
+
+/* 5.1 Portfolio */
+
+div.image {
+	float: none;
+	max-width: 100%;
+}
+div.description {
+	float: none;
+	max-width: 30em;
+	margin-left: 0em;
+	margin-bottom: 1em;
+}
+
+
+/* 5.2 Archives */
+
+ul#archives li span.when{
+	width: 30em;
+	display: block;
+}
+ul#archives li {
+	padding: 3em 0em;
+}
+ul#archives li a{
+	float: none;
+}
+ul#archives li span.cats{
+	display: inline;
+	padding-left: 0em;
+}
+ul#archives li span.cats a{
+	margin: 0em 1em 2em 0em;
+}
+
+.column {
+float: none;
+width: auto;
+margin: 0 auto;
+}
+
+.twocolumn {
+float: none;
+width: auto;
+margin: 0 auto;
+}
+
+
+}

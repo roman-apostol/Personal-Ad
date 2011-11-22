@@ -1,0 +1,573 @@
+/*
+Goldilocks Approach to Responsive Web Design Boilerplate
+
+Author: Design by Front - @designbyfront
+Version: 0.1
+URL: http://www.goldilocksapproach.com
+----------------------------------------------------------------------------------------
+
+CONTENTS - GLOBAL.CSS
+-----------------------------------------
+1. RESET
+2. ROOT
+3. CORE TYPOGRAPHY
+4. LINKS
+5. GLOBAL LAYOUT & GLOBAL CUSTOM TYPOGRAPHY
+5.1 PORTFOLIO
+5.2 ARCHIVES
+5.3 SINGLE
+6. CUSTOM LAYOUT & TYPOGRAPHY (Baby bear)
+7. BROWSER AND NON-SEMANTIC STYLING
+
+CONTENTS - LAYOUT.CSS
+-----------------------------------------
+8. CUSTOM LAYOUT & TYPOGRAPHY (Daddy bear)
+9. CUSTOM LAYOUT & TYPOGRAPHY (Mummy bear)
+
+*/
+
+
+/* 1. RESET
+----------------------------------------------------------------------------------------*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size:100%;
+  font: inherit;
+  vertical-align: baseline;
+  }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+  }
+  
+  
+/* 2. ROOT
+----------------------------------------------------------------------------------------*/
+html { 
+  overflow-y: scroll;
+  background: #293643 /*url("http://jaypegams.comthemes/site_themes/jaype/images/jpeg.jpeg") repeat*/;
+  }
+
+/* /ht Ethan Marcotte - http://front.ie/l8rJaA */
+img, embed, object, video { max-width: 100%; }
+.ie6 img.full, .ie6 object.full, .ie6 embed, .ie6 video { width: 100%; }
+
+
+/* 3. CORE TYPOGRAPHY
+----------------------------------------------------------------------------------------*/
+body {
+  font-family:ff-unit-slab-web-1,ff-unit-slab-web-2, Georgia, "Times New Roman", serif;
+  font-size: 100%;
+  line-height: 1.618em;
+  color: #546374;
+  margin: auto;
+  }
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 0.809em;
+  line-height: 1em;
+  }
+
+p, ul, ol, dl, blockquote {line-height: 1.618em;margin-bottom: 1.618em;}
+p {max-width: 35em;}  
+ul { list-style-type: disc; margin-left: 1.618em; }
+ol { list-style-type: decimal; margin-left: 1.618em; }
+nav ul, nav ol { list-style: none; margin: 0; padding: 0;}
+
+b, strong { font-weight: bold; color: #546374; }
+i, em { font-style: italic; }
+small { font-size: 80%; }
+
+
+/* 4. LINKS
+----------------------------------------------------------------------------------------*/
+a, a:visited { outline: none; color: #B5BFC6; text-decoration: none;}  
+a:hover { outline: none; text-decoration:none; }  
+a:active, a:focus { outline: none; }
+
+
+/* 5. GLOBAL LAYOUT & GLOBAL CUSTOM TYPOGRAPHY
+----------------------------------------------------------------------------------------*/
+header.header {
+	margin-bottom: 3em;
+}
+
+header.header a.logo{
+	display: block;
+	margin-left: 25%;
+	margin-top: 1em;
+	height: 40px;
+	text-transform: uppercase;
+	font-size: 110%;
+	background: url('http://jaypegams.com/themes/site_themes/jaype/images/logo.png') no-repeat left center;
+	padding-left: 3em;
+	padding-top: 1em;
+}
+
+nav.menu{
+	width: 100%;
+	display: block;
+	margin-bottom: 3em;
+}
+nav ul {
+	margin:0 5% ;
+	text-align: center;
+	
+}
+nav ul li {
+	padding-top: 2.2em;
+	padding-right: 5%;
+	display: inline-block;
+		
+}
+nav ul li a {text-transform: uppercase;}
+nav ul li a:hover{border-bottom: 4px solid #546374;}
+
+#journal nav ul li.n-journal a, #photos nav ul li.n-photos a, #portfolio nav ul li.n-portfolio a, #contact nav ul li.n-contact a, #infos nav ul li.n-infos a, #services nav ul li.n-services a, #ratings nav ul li.n-ratings a{
+	border-bottom: 4px solid #546374;
+}
+header.header p.intro {
+	clear: both;
+	padding: 1em 2em;
+	margin: 1em auto;
+	display: block;
+	text-align: center;
+	font-size: 2em;
+	line-height: 1.3em;
+}
+#main {
+	margin-top: 3.618em;
+}
+
+ul.folio {
+	list-style-type: none;
+}
+ul.folio li {
+	float: none;
+	width: 100%;
+	margin-right: 0%;
+	text-align: center;
+}
+ul.folio li:nth-child(2) {
+	margin-top: 2em;
+}
+ul.folio li:nth-child(2) span{
+	left: 120px;
+	top: -180px;
+}
+ul.folio li:last-child {
+	margin-right: 0;
+	margin-top: 0em;
+}
+ul.folio li a{
+	position: relative;
+}
+ul.folio li img{
+	padding: 10px;
+	background: rgba(250,250,250,0.6) ;
+	border: 1px solid #CCC;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+ul.folio span{
+	position: absolute;
+	padding: 7px;
+	background: #439BBD;
+	background: rgba(235, 235, 225, 0.9);
+	display: block;
+	left: 200px;
+	top: -10px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	color: #444;
+	font-size: 85%;
+}
+
+.posts {max-width: 29em;float: left;}
+.posts h1, #services h1 {font-size: 2em;}
+
+article {
+	padding: 2em 0;
+	margin-bottom: 2em;
+}
+article a {
+	border-bottom: 1px solid #CB847C;
+}
+article post_body a {
+	color: #525D67;
+}
+article .post_body p{
+	font-size: 100%;
+}
+
+article h2{
+	font-size: 150%;
+	line-height: 1.3em;
+}
+
+article .date{
+	margin-top: -0.5em;
+	font-size: 85%;
+}
+article img{
+	margin-bottom: 1em;
+	max-width: 100%;
+}
+article p{
+	padding-bottom: 1em;
+	max-width: 29em;
+}
+
+aside.recent {
+	margin-left: 0em;
+}
+aside.recent p{
+	margin-left: 0em;
+	margin-top: 2em;
+}
+aside.recent h3 {
+	font-size: 130%;
+	margin-left: 0em;
+}
+aside.recent ul {
+	margin-left: 0em;
+}
+aside.recent ul li {
+	list-style-type: none;
+	margin-left: 0;
+	padding: 1em 0 0.1em 0;
+	
+}
+aside.recent ul li a{
+	line-height: 1.6em;
+	border-bottom: 1px solid #CB847C;
+}
+a.readmore {
+	color:#525D67 ;
+	
+}
+h1.calltoaction {
+	clear: both;
+	font-size: 1.6em;
+	padding: 2em 1em;
+	line-height: 1.618em;
+}
+div.wrap_dark {
+	background: #EAEEF1;
+	height: auto;
+	display: block;
+	margin-bottom: -30px;
+	
+}
+footer.footer {
+	clear: both;
+	margin-bottom: 0;
+	color: #546374;
+}
+footer p{
+	padding: 2em 0;
+	max-width: 36em;
+	text-align: left;
+}
+footer .column {
+	color: #546374;
+}
+
+/* 5.1 Portfolio */
+
+div.image {
+	float: none;
+	width: 90%;
+	margin-bottom: 4em;
+}
+div.image img {
+	padding: 10px;
+	background: rgba(250, 250, 250, 0.1);
+	border: 1px solid rgba(250, 250, 250, 0.2);
+	max-width: 100%;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+div.description {
+	float: none;
+	width: 100%;
+	margin-left: 0em;
+	margin-bottom: 1em;
+}
+
+div.description span {
+	font-size: 90%;
+	color: #B5BFC6;
+}
+div.items {
+	display: block;
+	clear: both;
+	
+}
+
+/* 5.2 Archives */
+ul#archives {
+	list-style-type: none;
+	margin-bottom: 3em;
+	border-top: 3px solid #546374;
+}
+
+ul#archives li{
+	padding: 3em 0em;
+	border-bottom: 3px solid #546374;
+}
+ul#archives li span.when{
+	width: 10em;
+	display: block;
+}
+ul#archives li a{
+	float: none;
+	display: block;
+	font-size: 130%;
+}
+ul#archives li span.cats{
+	display: inline;
+	padding-left: 0em;
+}
+ul#archives li span.cats a{
+	float: left;
+	font-size: 90%;
+	display: block;
+	color: #546374;
+	margin: 0.5em 1em 0 0;
+	border-bottom: 1px solid #546374;
+	margin-bottom: 2em;
+	
+}
+/* 5.3 Single */
+
+#single article{
+	margin: 0em auto 0;
+	border-bottom: none;
+}
+
+#single article header {
+	padding-left: 0em;
+	max-width: 33em;
+}
+#single .post_body{
+	padding-left: 1em  ;
+	padding-right: 1em;
+	max-width: 33em;
+	background: #EAEEF1;
+	clear: both;
+}
+#single article header h2{
+	font-size: 150%;
+	max-width: 21em;
+}
+
+#single article .article_img {
+	margin-left: -1em;
+	padding-right: 0em;
+	max-width: 108.3%;
+	margin-top: 0em;
+}
+#single article a{
+	color: #525D67;
+}
+#single article h2 a {
+	color: #B5BFC6;
+}
+#single article .fullwidth {
+	margin-left: 0em;
+	max-width: 100%;
+	margin-top: 2em;
+}
+#single article .strong {
+	font-size: 130%;
+	padding-right: 1em;
+}
+#single article img{
+	margin-top: 0em;
+}
+#single article blockquote{
+	margin-left: 2em;
+	border-left: 3px solid #FFF;
+	color: #506374;
+	max-width: 25em;
+	font-style: italic;
+	padding-left: 1em;
+}
+#single article blockquote p{
+	padding-bottom: 0em;
+}
+#single article footer.meta {
+	padding-left: 7em;
+	background: rgba(250,250,250, 0.2);
+	max-width: 33em;
+	margin-top: -1.6em;
+	padding-top: 2em;
+	padding-bottom: 2em;
+	color: #FFF;
+}
+#single article footer.meta a{
+	color:#B5BFC6 ;
+}
+#single article aside {
+	margin-top: 1em;
+	width: 30em;
+	display: block;
+}
+#single article aside a {
+	color: #B5BFC6;
+}
+#single article aside h3 {
+	margin-top: 1em;
+	float: left;
+}
+#single article aside ul {
+	float: left;
+	margin-top: 1em;
+}
+#single article aside ul li{
+	list-style-type: none;
+	float: left;
+	padding: 0 1em 0 0;
+	
+}
+#journal div.wrap_dark {
+	background: transparent;
+	height: 60px;
+}
+/* Photos */
+
+#photos img {
+	max-width: 100%;
+	margin-bottom: 2em;
+}
+
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+
+/* services */
+
+.column {
+	color: #EAEEF1;	
+}
+
+#portfolio h1 {
+	color: #EAEEF1;
+	font-size: 140%;
+	padding: 0 2em;
+	line-height: 1.618em;
+}
+
+.column H3 {
+	text-transform: uppercase;
+}
+#services {
+	clear: both;
+}
+
+/* infos */
+
+.personal h1 {
+	color: #EAEEF1;
+	font-size: 130%;
+	padding: 0 2em;
+	line-height: 1.618em;
+}
+
+#infos .social li {
+	list-style-type: none;
+	padding: 0.7em 0 0;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+/* journal */
+
+#blog .post_body{
+	padding-left: 1em  ;
+	padding-right: 1em;
+	max-width: 33em;
+	background: #EAEEF1;
+	clear: both;
+}
+
+#blog article p.date {
+	padding-bottom: 0;
+}
+/*#blog article a.readmore {
+	margin-top: -1em;
+}*/
+/* 6. CUSTOM LAYOUT & TYPOGRAPHY (Baby bear)
+----------------------------------------------------------------------------------------*/
+.container {
+    padding: 0.809em;
+    max-width: 30em;
+    margin: auto;
+    
+  }
+
+
+aside { width: 100%; }
+
+
+
+
+/* 7. BROWSER AND NON-SEMANTIC STYLING
+----------------------------------------------------------------------------------------*/
+.cf:before, .cf:after { content: ""; display: block; }
+.cf:after { clear: both; }
+.ie6 .cf { zoom: 1 }
+
+
+  .hidden {
+    display: none;
+  }
+  
+    /* Pop-up message and fading background */
+  #opaco {
+     background-color: #000000;
+     left: 0;
+     -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";/* IE8 */
+     filter:progid:DXImageTransform.Microsoft.Alpha(opacity = 70); /* IE5+ */
+     filter: alpha(opacity=70);/* IE4- */
+     moz-opacity: 0; /* Mozilla */
+     -khtml-opacity: 0; /* Safari */
+     opacity: 0;  /* general CSS3 */
+     position: absolute;
+     top: 0;
+     width: 100%;
+     z-index: 10;
+   }
+
+  #popup {
+     background-color: #FFFFFF;
+     position: fixed;
+     top:0;
+     left:0;
+     /*width:300px;*/
+     min-width: 300px;
+     z-index: 11;
+  }

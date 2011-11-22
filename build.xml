@@ -86,6 +86,9 @@
             <fileset dir="${webdir}">
                 <include name="**/*.jsp"/>
                 <include name="**/*.html"/>
+                <include name="**/*.png" />
+                <include name="**/*.css" />
+                <include name="**/*.js" />
             </fileset>
         </war>
     </target>
