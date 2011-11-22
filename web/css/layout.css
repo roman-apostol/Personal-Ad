@@ -153,14 +153,14 @@ ul#archives li span.cats a{
 /* services */
 .column {
 float: left;
-width: 15.333333333em;
+width: 18.333333333em;
 padding: 1em;
 text-align: left;
 }
 
 .twocolumn {
 float: left;
-width: 30.666666666em;
+width: 27.666666666em;
 padding: 1em;
 text-align: left;
 }
@@ -405,11 +405,11 @@ width: auto;
 margin: 0 auto;
 }
 
-.twocolumn {
+.twocolumn 
+{
 float: none;
 width: auto;
 margin: 0 auto;
 }
-
 
 }
