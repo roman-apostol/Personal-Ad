@@ -26,6 +26,10 @@
 </head>
 
 <body id="infos">
+
+<div id="opaco" class="hidden"></div>
+<div id="popup" class="hidden" style="left:50%; top:50%;"></div>
+<div id="popup_login_ajax" class="hidden"></div>
   
     <header class="header container cf">
     
@@ -35,13 +39,13 @@
     	<ul class="grid_2">
     		<li class="n-portfolio"><a href="./brands.html">Бренди</a></li>
             
-    		<li class="n-ratings"><a href="./ratings.html">Рейтинг</a></li>
+    		<!--li class="n-ratings"><a href="./ratings.html">Рейтинг</a></li-->
             
     		<li class="n-infos"><a href="./about.html">Про проект</a></li>
     
     		<!--li class="n-journal"><a href=".">Правила</a></li-->
             
-            <li class="n-services"><a href=".">Увійти</a></li>
+            <li class="n-services"><a id="text-user" href="#" onCLick="$('#popup_login').togglePopup(); return false;">Увійти</a></li>
     
     		<!--li class="n-photos"><a href="http://jaypegams.com/photos"></a></li-->
    

@@ -45,7 +45,8 @@ aside.recent p{
 #main .posts .post_body {
 	margin-left: -10000em;
 	padding-left: 10000em;
-	background: #EAEEF1;
+/*	background: #EAEEF1;*/
+background: #FFFFFF;
 	padding-bottom: 2em;
 }
 #main .posts .post_body p{
@@ -153,14 +154,14 @@ ul#archives li span.cats a{
 /* services */
 .column {
 float: left;
-width: 15.333333333em;
+width: 16em;
 padding: 1em;
 text-align: left;
 }
 
 .twocolumn {
 float: left;
-width: 30.666666666em;
+width: 32em;
 padding: 1em;
 text-align: left;
 }

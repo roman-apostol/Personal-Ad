@@ -18,9 +18,9 @@
 <link rel="stylesheet" href="http://jaypegams.com/?css=embed/layout.v.1320512585" media="all">
 <![endif]-->
 
-<script type="text/javascript" src="./scripts/modernizr-1.7.min.js"></script>
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.min.js"></script>
 <script type="text/javascript" src="http://loginza.ru/js/widget.js"></script>
+<script type="text/javascript" src="./scripts/modernizr-1.7.min.js"></script>
 <script type="text/javascript" src="./scripts/popups.js"></script>
   
 </head>
@@ -29,6 +29,7 @@
 
 <div id="opaco" class="hidden"></div>
 <div id="popup" class="hidden" style="left:50%; top:50%;"></div>
+<div id="popup_login_ajax" class="hidden"></div>
   
     <header class="header container cf">
     
@@ -38,25 +39,17 @@
     	<ul class="grid_2">
     		<li class="n-portfolio"><a href="./brands.html">Бренди</a></li>
             
-    		<li class="n-ratings"><a href="./ratings.html">Рейтинг</a></li>
+    		<!--li class="n-ratings"><a href="./ratings.html">Рейтинг</a></li-->
             
     		<li class="n-infos"><a href="./about.html">Про проект</a></li>
     
     		<!--li class="n-journal"><a href=".">Правила</a></li-->
             
-            <li class="n-services"><a href="#" onCLick="$('#popup_login').togglePopup(); return false;">Увійти</a></li>
+            <li class="n-services"><a id="text-user" href="#" onCLick="$('#popup_login').togglePopup(); return false;">Увійти</a></li>
     
     		<!--li class="n-photos"><a href="http://jaypegams.com/photos"></a></li-->
    
     </ul></nav>
-    
-<div id="popup_login" class="hidden">
-    <div id="popup_login_div" style="margin:0px;padding: 25px; background: rgba(250, 250, 250, 0.6); border: 10px solid #CCC; border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 25px; color: #B5BFC6;">
-    <h1 style="font-size: 2em; color: #546374;">Обери метод доступу</h1>
-    <iframe src="http://loginza.ru/api/widget?overlay=loginza&token_url=http://192.168.0.200/&providers_set=facebook,twitter,vkontakte,flickr&lang=uk" style="width:359px;height:300px;" scrolling="no" frameborder="no"></iframe>
-    </div>
-</div>
-  
 
  <p class="intro">Привіт! Маєш <a href="./about.html#popular">популярну сторінку</a> на Вконтакті або Фейсбуці або блог? Спілкуйся про <a href="./brands.html">улюблені бренди</a> і отримуй різноманітні заохочення! Це ж так просто - поміняв статус - отримав поповнення мобільного рахунку!</p>
  </header>

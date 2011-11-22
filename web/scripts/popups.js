@@ -1,5 +1,16 @@
 //additional properties for jQuery object
-$(document).ready(function(){
+$(document).ready(function() {
+    $.get("http://localhost/popup_login.html", function(data) {
+        $("#popup_login_ajax").html(data);
+    });
+    
+    if (document.referrer.indexOf("loginza") != -1) {
+    // assume we have logged in as Taras
+        $('#text-user').html("Вітаємо, Тарас Галковський!");
+        $('#text-user').removeAttr("onClick");
+        $('#text-user').attr('href', 'user.html');
+    }
+
    //align element in the middle of the screen
     $.fn.alignCenter = function() {
         //get margin left
