@@ -1,6 +1,6 @@
 <project name="Dependency Import" basedir=".">
     <property name="libdir" value="lib" />
     
-	<!-- 3rd party dependencies -->
+    <!-- 3rd party dependencies -->
     <property name="mysql-connector.jar" value="${libdir}/mysql-connector-java-5.1.18-bin.jar" />
 </project>

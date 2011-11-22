@@ -1,34 +1,34 @@
 <?xml version="1.0"?>
 <project name="Personal Advertisement Database Script" default="setup_db" basedir=".">
 
-	<property name="sqldir" value="sql" />
+    <property name="sqldir" value="sql" />
     <property file="build.properties" />
 
     <!-- Import the dependencies of this build file -->
     <import file="build-dependencies.xml"/>
-	
+    
     <property name="sql.driver" value="org.gjt.mm.mysql.Driver" />
-	<property name="sql.url" value="jdbc:mysql://${mysql.server}" />
-	<property name="sql.user" value="${mysql.user}" />
-	<property name="sql.pass" value="${mysql.pass}" />
-	
-	<target name="setup_db" >
-	    <mysql file="${sqldir}/01_personal_ad_main_schema.sql" />
-	</target>
-	
-	<target name="drop_db" >
-	    <mysql file="${sqldir}/00_personal_ad_drop_schema.sql" />
-	</target>
-	
-	<macrodef name="mysql">
-	    <attribute name="file" />
-		<sequential>
-			<sql driver="${sql.driver}"
-				 url="${sql.url}"
-				 userid="${sql.user}"
-				 password="${sql.pass}"
-				 classpath="${mysql-connector.jar}"
-				 src="@{file}" />
-	    </sequential>
-	</macrodef>
+    <property name="sql.url" value="jdbc:mysql://${mysql.server}" />
+    <property name="sql.user" value="${mysql.user}" />
+    <property name="sql.pass" value="${mysql.pass}" />
+    
+    <target name="setup_db" >
+        <mysql file="${sqldir}/01_personal_ad_main_schema.sql" />
+    </target>
+    
+    <target name="drop_db" >
+        <mysql file="${sqldir}/00_personal_ad_drop_schema.sql" />
+    </target>
+    
+    <macrodef name="mysql">
+        <attribute name="file" />
+        <sequential>
+            <sql driver="${sql.driver}"
+                 url="${sql.url}"
+                 userid="${sql.user}"
+                 password="${sql.pass}"
+                 classpath="${mysql-connector.jar}"
+                 src="@{file}" />
+        </sequential>
+    </macrodef>
 </project>
