@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+<project name="Personal Advertisement Build" default="dist" basedir=".">
+    <property file="${basedir}/build.properties"/>
+
+	<property name="distfilename" value="personal-ad" />
+	
+    <property name="javac.encoding" value="UTF-8"/>
+    <property name="verbose" value="no"/>
+	
+	<!-- DIRECTORY SETUP -->
+    <property name="srcdir" value="src"/>
+	<property name="webdir" value="web"/>
+	<property name="javasrc" value="${srcdir}/java"/>
+    <property name="javamain" value="${javasrc}/main"/>
+	<property name="builddir" value="build"/>
+    <property name="build_classdir" value="${builddir}/classes"/>
+    <property name="build_distdir" value="${builddir}/dist"/>
+	<property name="jboss_deploy_dir" value="${jboss.home}/server/default/deploy" />
+	
+    <!-- Import the dependencies of this build file -->
+    <import file="${basedir}/build-dependencies.xml"/>
+	<import file="${basedir}/build-database.xml"/>
+
+    <!-- NAME FOR .JAR FILES -->
+    <property name="component.war" value="${build_distdir}/${distfilename}.war"/>
+
+    <property name="tokenized_web" value="${builddir}/web"/>
+
+    <!-- classes needed to compile the production code -->
+    <path id="buildlibs">
+        <path refid="component.3rdParty-dependencies"/>
+    </path>
+
+    <!-- Initializes the environment necessary for building and deploying the application -->
+    <target name="init" description="initialize the build environment and update the configurations with tokens">
+        <mkdir dir="${builddir}"/>
+        <mkdir dir="${build_classdir}"/>
+        <mkdir dir="${build_distdir}"/>
+        <mkdir dir="${tokenized_web}"/>
+        <mkdir dir="${builddir}/tmp"/>
+        <copy todir="${tokenized_web}" overwrite="true">
+            <fileset dir="${webdir}">
+                <include name="**/*"/>
+            </fileset>
+        </copy>
+        <replace replacefilterfile="token.properties" dir="${tokenized_web}"/>
+    </target>
+
+    <target name="compile" description="compile the source code">
+        <mkdir dir="${build_classdir}"/>
+        <javac srcdir="${javamain}" destdir="${build_classdir}" includes="**" debug="true"
+               verbose="${verbose}" includeAntRuntime="no" encoding="${javac.encoding}">
+            <classpath refid="buildlibs"/>
+        </javac>
+    </target>
+
+    <target name="dist" depends="war">
+    </target>
+
+    <target name="clean">
+        <delete dir="${builddir}"/>
+    </target>
+
+    <target name="clean-jboss">
+        <delete dir="${jboss.home}/server/${server.name}/tmp"/>
+        <delete dir="${jboss.home}/server/${server.name}/work"/>
+        <delete dir="${jboss_deploy_dir}/${distfilename}.war"/>
+        <delete file="${jboss_deploy_dir}/${distfilename}.war"/>
+    </target>
+
+
+    <target name="deploy" depends="clean-jboss, dist" description="deploy the war to jboss">
+        <unzip src="${build_distdir}/${distfilename}.war" dest="${jboss_deploy_dir}/${distfilename}.war"/>
+    </target>
+
+    <!-- Builds the WAR file for web application module -->
+    <target name="war" depends="clean, init, compile" description="Builds the WAR file">
+        <war warfile="${build_distdir}/${distfilename}.war" webxml="${tokenized_web}/WEB-INF/web.xml">
+            <webinf dir="${tokenized_web}/WEB-INF" includes="applicationContext.xml"/>
+            <webinf dir="${webdir}/WEB-INF" includes="tld/*.tld"/>
+            <webinf dir="${webdir}/WEB-INF" includes="tags/**/*.tag"/>
+            <classes dir="${tokenized_web}/WEB-INF" includes="struts.xml"/>
+            <classes dir="${tokenized_web}/WEB-INF" includes="validators.xml"/>
+            <classes dir="${build_classdir}" includes="**/*.class"/>
+            <classes dir="${tokenized_web}" includes="META-INF/**/*"/>
+            <fileset dir="${webdir}">
+                <include name="**/*.jsp"/>
+				<include name="**/*.html"/>
+            </fileset>
+        </war>
+    </target>
+
+</project>
