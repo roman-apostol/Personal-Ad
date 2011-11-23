@@ -1,0 +1,4 @@
+build
+*.bak
+*.properties
+.DS_Store
