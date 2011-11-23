@@ -406,11 +406,11 @@ width: auto;
 margin: 0 auto;
 }
 
-.twocolumn {
+.twocolumn 
+{
 float: none;
 width: auto;
 margin: 0 auto;
 }
-
 
 }

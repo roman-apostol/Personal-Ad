@@ -1,0 +1,18 @@
+.questionMark {
+position:relative;
+height:26px; /*dimensions of our image*/
+width:26px;
+background:url('../images/qm.gif') top left no-repeat;
+}
+.toolTip {
+position:absolute;
+left:26px; /*Moves it to the right beside the question mark*/
+top:0;
+display:none;
+/*The attributes below make it look pretty*/
+width:100px;
+padding:5px;
+border:1px solid #ffffff;
+background-color: '#eeeeee';
+font:10px/12px Arial, Helvetica, sans-serif;
+}
