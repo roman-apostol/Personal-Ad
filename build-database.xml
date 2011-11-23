@@ -14,6 +14,7 @@
     
     <target name="setup_db" >
         <mysql file="${sqldir}/01_personal_ad_main_schema.sql" />
+        <mysql file="${sqldir}/02_personal_ad_constraints_and_indexes.sql" />
     </target>
     
     <target name="drop_db" >
