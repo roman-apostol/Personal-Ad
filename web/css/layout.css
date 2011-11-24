@@ -14,6 +14,7 @@ aside {
   width: 18.5em;
   height:auto;
   }
+  
 header.header a.logo{
 	float: left;
 	margin-left: 0%;
@@ -31,15 +32,6 @@ ul.folio li {
 	float: left;
 	width: 38%;
 	margin-right: 8%;
-}
-aside.recent {
-	width: 18.5em;
-	margin-left: 2em;
-	margin-top: 11em;
-	margin-left: 1.618em;
-}
-aside.recent p{
-	margin-top: 2em;
 }
 
 #main .posts .post_body {
@@ -154,21 +146,16 @@ ul#archives li span.cats a{
 /* services */
 .column {
 float: left;
-width: 16em;
+width: 10em;
 padding: 1em;
 text-align: left;
 }
 
 .twocolumn {
-float: left;
-width: 32em;
+float: right;
+width: 30em;
 padding: 1em;
 text-align: left;
-}
-
-#services H1 {
-	text-align:center;
-	padding: 2em 0 1em 0;
 }
 
 /*journal */
@@ -266,38 +253,12 @@ ul.folio li:last-child {
 	margin-top: 1em;
 }
 
-h1.calltoaction {
-	padding: 2em 0em;
-}
    
 article aside{
 	margin-left: 0;
 	width: auto;
 }
 
-aside.recent {
-	width: 30em;
-	margin-left: 0em;
-}
-aside.recent p{
-	margin-left:0em;
-	margin-top: 2em;
-}
-aside.recent h3 {
-	font-size: 110%;
-	margin-left: 0em;
-}
-aside.recent ul {
-	margin-left: 0em;
-}
-aside.recent ul li {
-	list-style-type: none;
-	margin-left: 0;
-	padding: 1em 0 0.1em 0;
-}
-aside.recent ul li a{
-	line-height: 1.6em;
-}
 
 /* single post 
 --------------------------------------*/
@@ -398,19 +359,6 @@ ul#archives li span.cats{
 }
 ul#archives li span.cats a{
 	margin: 0em 1em 2em 0em;
-}
-
-.column {
-float: none;
-width: auto;
-margin: 0 auto;
-}
-
-.twocolumn 
-{
-float: none;
-width: auto;
-margin: 0 auto;
 }
 
 }
