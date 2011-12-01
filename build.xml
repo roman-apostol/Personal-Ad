@@ -79,6 +79,7 @@
             <webinf dir="${tokenized_web}/WEB-INF" includes="applicationContext.xml"/>
             <webinf dir="${webdir}/WEB-INF" includes="tld/*.tld"/>
             <webinf dir="${webdir}/WEB-INF" includes="tags/**/*.tag"/>
+            <webinf dir="${webdir}/WEB-INF" includes="*.xml"/>
             <classes dir="${tokenized_web}/WEB-INF" includes="struts.xml"/>
             <classes dir="${tokenized_web}/WEB-INF" includes="validators.xml"/>
             <classes dir="${build_classdir}" includes="**/*.class"/>
