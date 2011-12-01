@@ -13,5 +13,11 @@
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="lib" path="lib/mysql/mysql-connector-java-5.1.18-bin.jar"/>
+	<classpathentry kind="lib" path="lib/spring/org.springframework.context-3.0.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/spring/org.springframework.core-3.0.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/spring/org.springframework.asm-3.0.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/spring/org.springframework.beans-3.0.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/spring/org.springframework.web-3.0.6.RELEASE.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>
