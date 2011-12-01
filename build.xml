@@ -12,9 +12,11 @@
     <property name="webdir" value="web"/>
     <property name="javasrc" value="${srcdir}/java"/>
     <property name="javamain" value="${javasrc}/main"/>
+    <property name="libdir" value="lib" />
     <property name="builddir" value="build"/>
     <property name="build_classdir" value="${builddir}/classes"/>
     <property name="build_distdir" value="${builddir}/dist"/>
+    <property name="build_lib" value="${builddir}/lib"/>
     <property name="jboss_deploy_dir" value="${jboss.home}/server/default/deploy" />
     
     <!-- Import the dependencies of this build file -->
@@ -25,11 +27,6 @@
     <property name="component.war" value="${build_distdir}/${distfilename}.war"/>
 
     <property name="tokenized_web" value="${builddir}/web"/>
-
-    <!-- classes needed to compile the production code -->
-    <path id="buildlibs">
-        <path refid="component.3rdParty-dependencies"/>
-    </path>
 
     <!-- Initializes the environment necessary for building and deploying the application -->
     <target name="init" description="initialize the build environment and update the configurations with tokens">
@@ -75,6 +72,11 @@
 
     <!-- Builds the WAR file for web application module -->
     <target name="war" depends="clean, init, compile" description="Builds the WAR file">
+        <copy todir="${build_lib}" flatten="true">
+            <fileset dir="${libdir}">
+                <include name="**/*.jar" />
+            </fileset>
+        </copy>
         <war warfile="${build_distdir}/${distfilename}.war" webxml="${tokenized_web}/WEB-INF/web.xml">
             <webinf dir="${tokenized_web}/WEB-INF" includes="applicationContext.xml"/>
             <webinf dir="${webdir}/WEB-INF" includes="tld/*.tld"/>
@@ -91,6 +93,7 @@
                 <include name="**/*.css" />
                 <include name="**/*.js" />
             </fileset>
+            <lib dir="${build_lib}" />
         </war>
     </target>
 
