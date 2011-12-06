@@ -14,6 +14,7 @@
 <link rel="stylesheet" href="./css/global.css" media="all">
 <link rel="stylesheet" href="./css/layout.css" media="all and (min-width: 33.236em)">
 <link rel="stylesheet" href="./css/master.css" media="all">
+<link rel="stylesheet" href="./css/magazinegrid.css" type="text/css" media="screen, handheld" charset="utf-8">
 <!-- 30em + (1.618em * 2) = 33.236em / Eliminates potential of horizontal scrolling in most cases -->
 
 <!--[if (lt IE 9) & (!IEMobile)]>
@@ -35,19 +36,19 @@
 
 <body id="portfolio">
   
-<header class="header container cf"  style="font-family: pt-sans-caption;">
-    <a href="index.html" class="logo">БрендЛаверс</a>
+<header class="header container cf"  style="font-family: pt-sans-caption; font-size:130%; color:#B5BFC6 !important;">
+    <a href="index.html" class="logo" style="font-weight: normal;">БрендЛаверс</a>
     <nav class="menu">
     	<ul class="grid_2">
-    		<li class="n-portfolio"><a href="./brands.html">Бренди</a></li>
+    		<li class="n-portfolio"><a style="color:#B5BFC6;font-weight: normal;" href="./brands.html">Бренди</a></li>
             
     		<!--li class="n-ratings"><a href="./ratings.html">Рейтинг</a></li-->
             
-    		<li class="n-infos"><a href="./about.html">Про проект</a></li>
+    		<li class="n-infos"><a style="color:#B5BFC6;font-weight: normal;" href="./about.html">Про проект</a></li>
     
     		<!--li class="n-journal"><a href=".">Правила</a></li-->
             
-            <li class="n-services"><a id="text-user" href="#" onCLick="$('#popup_login').togglePopup(); return false;">Увійти</a></li>
+            <li class="n-services"><a id="text-user" href="#" onCLick="$('#popup_login').togglePopup(); return false;" style="color:#B5BFC6; font-weight: normal;">Увійти</a></li>
     
     		<!--li class="n-photos"><a href="http://jaypegams.com/photos"></a></li-->
    
@@ -56,46 +57,65 @@
 
 <footer class="footer cf">
 <div class="container" style="padding-top:2em;">
+	
+<h1 class="intro">Активні кампанії</h1>
+<section>
+  <p class="grid x3">
+<img src = "./images/ChernigivskeSvitle1.png" class="left" style="margin:0 10px 0 0; height:100px;" />
+    <a style="branddesc">Бренд:</a> Axe<br/>
+    <a style="branddesc">Предмет:</a> статуси та нотатки в соц мережах<br/>
+    <a style="branddesc">Винагорода:</a> футболки<br/>
+    <a class="button"><input type="checkbox" /> підписатися</a>
+    <a class="button right" href="#">деталі</a>
+  </p>
+  <p class="grid x3">
+<img src = "./images/ChernigivskeSvitle1.png" class="left" style="margin:0 10px 0 0; height:100px;" />
+    <a style="branddesc">Бренд:</a> Чернігівське<br/>
+    <a style="branddesc">Предмет:</a> статуси в ВКонтакті<br/>
+    <a style="branddesc">Винагорода:</a> кришечки<br/>
+    <a class="button"><input type="checkbox" /> підписатися</a>
+    <a class="button right" href="#">деталі</a>
+  </p>
+</section>
+<section>
+  <p class="grid x3">
+<img src = "./images/ChernigivskeSvitle1.png" class="left" style="margin:0 10px 0 0; height:100px;" />
+    <a style="branddesc">Бренд:</a> МакДональдс<br/>
+    <a style="branddesc">Предмет:</a> чекін в соц мережах<br/>
+    <a style="branddesc">Винагорода:</a> купон на знижку<br/>
+    <a class="button"><input type="checkbox" /> підписатися</a>
+    <a class="button right" href="#">деталі</a>
+  </p>
+</section>
+<hr/>
 
-<div class="column">
-<h1 style="text-align:left">Пасивна підтримка<div onmouseover="document.getElementById('tt1').style.display='block'" onmouseout="document.getElementById('tt1').style.display='none'" class="questionMark">
-<div id="tt1" class="toolTip">Під пасивними кампаніями ми розуміємо ті які безпосередньо у данний момент не передбачають заохочення, проте робота з якими підвищує рейтинг</div>
-</div>
-</h1>
+<h1 class="intro">Всі бренди</h1>
+<section>
+  <p class="grid x3">
+<img src = "./images/ChernigivskeSvitle1.png" class="left" style="margin:0 10px 0 0; height:100px;" />
+    <a style="branddesc">Бренд:</a> Axe<br/>
+    <a style="branddesc">Предмет:</a> статуси та нотатки в соц мережах<br/>
+    <a style="branddesc">Винагорода:</a> футболки<br/>
+    <a class="button right" href="#">деталі</a>
+  </p>
+  <p class="grid x3">
+<img src = "./images/ChernigivskeSvitle1.png" class="left" style="margin:0 10px 0 0; height:100px;" />
+    <a style="branddesc">Бренд:</a> Чернігівське<br/>
+    <a style="branddesc">Предмет:</a> статуси в ВКонтакті<br/>
+    <a style="branddesc">Винагорода:</a> кришечки<br/>
+    <a class="button right" href="#">деталі</a>
+  </p>
+</section>
+<section>
+  <p class="grid x3">
+<img src = "./images/ChernigivskeSvitle1.png" class="left" style="margin:0 10px 0 0; height:100px;" />
+    <a style="branddesc">Бренд:</a> МакДональдс<br/>
+    <a style="branddesc">Предмет:</a> чекін в соц мережах<br/>
+    <a style="branddesc">Винагорода:</a> купон на знижку<br/>
+    <a class="button right" href="#">деталі</a>
+  </p>
+</section>
 
-<a href="/kyivstar"><img src="./images/brand-kyivstar.png" height="30px"></a><br/>
-<a href="/epicentr"><img src="./images/brand-epicentr.png" height="30px"></a><br/>
-<a href="/ryaba"><img src="./images/brand-ryaba.png" height="30px"></a><br/>
-<a href="/life"><img src="./images/brand-life.png" height="30px"></a><br/>
-<a href="/okko"><img src="./images/brand-okko.png" height="30px"></a><br/>
-<p>Покажи свою креативність, вміння висловлюватися яскраво і незашорено. Підтримай бренд та позмагайся за призи!</p>
-</div>
-
-<div class="twocolumn">
- <h1 style="text-align:right;">Активна підтримка</h1> 
-<a href="/chernigiv" style="border-bottom: 1px solid #CB847C;"><strong> Фото з Чернігівським
-</strong></a> :
-<table border="1" cellpadding="2" cellspacing="0" width="100%">
-
-<tr><td> Бренд</td><td>Умова</td><td>Заохочення</td></tr>
-
-<tr><td align="left" valign="top" width="20%">
-
-<img src = "./images/ChernigivskeSvitle.png" style="float:left;margin:0 5px 0 0;" />
-
-</td><td align="left" valign="top" width="50%">
-<p>	 Подобається пиво Чернігівське і є кілька зайвих фоток?  Завантаж у будь-якій з соц. мереж власне фото з пивом Чернігівське чи його атрибутикою і познач його тегом @chernigivske. Користувачі фото яких пройдуть модерацію одержать по футболці Чернігівського.
-</p>
-</td><td align="left" valign="top" width="30%">
-
-<img src = "./images/tshirt.png" style="float:left;margin:0 5px 0 0;" />
-
-</td></tr></table>
-
-	<p><a href="/axe" style="border-bottom: 1px solid #CB847C;"><strong>Улюблений аромат AXE</strong></a> :<br/>
-<img src = "./images/axe.jpg" style="float:left;margin:0 5px 0 0;" />
-Справжні чоловіки надають перевагу чоловічим дезодорантам АХЕ. Напиши у себе на стіні чи у статусі який аромат з лінійки АХЕ твій улюблений. Кожен учасник кампанії одержить 5 грн. на рахунок мобільного. </p>
-    
 </div></footer>
 
 <header class="header container cf" style="margin-bottom:1em;">

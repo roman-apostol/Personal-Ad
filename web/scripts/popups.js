@@ -1,7 +1,10 @@
 //additional properties for jQuery object
 $(document).ready(function() {
-    $.get("http://localhost/popup_login.html", function(data) {
+    $.get("./popup_login.html", function(data) {
         $("#popup_login_ajax").html(data);
+    });
+    $.get("./popup_quicksubmit.html", function(data) {
+        $("#popup_quicksubmit_ajax").html(data);
     });
     
     if (document.referrer.indexOf("loginza") != -1) {
