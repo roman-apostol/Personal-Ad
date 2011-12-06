@@ -9,6 +9,7 @@
     <property name="spring-context.jar" value="${libdir}/spring/org.springframework.context-3.0.6.RELEASE.jar" />
     <property name="spring-core.jar" value="${libdir}/spring/org.springframework.core-3.0.6.RELEASE.jar" />
     <property name="spring-web.jar" value="${libdir}/spring/org.springframework.web-3.0.6.RELEASE.jar" />
+    <property name="spring-expression.jar" value="${libdir}/spring/org.springframework.expression-3.0.6.RELEASE.jar" />
 
 
     <path id="spring.libs">
@@ -17,6 +18,7 @@
         <pathelement location="${spring-context.jar}" />
         <pathelement location="${spring-core.jar}" />
         <pathelement location="${spring-web.jar}" />
+        <pathelement location="${spring-expression.jar}" />
     </path>
 
     <path id="mysql.libs">

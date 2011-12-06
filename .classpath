@@ -19,5 +19,6 @@
 	<classpathentry kind="lib" path="lib/spring/org.springframework.asm-3.0.6.RELEASE.jar"/>
 	<classpathentry kind="lib" path="lib/spring/org.springframework.beans-3.0.6.RELEASE.jar"/>
 	<classpathentry kind="lib" path="lib/spring/org.springframework.web-3.0.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/spring/org.springframework.expression-3.0.6.RELEASE.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>
