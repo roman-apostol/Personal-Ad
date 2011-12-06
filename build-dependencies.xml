@@ -1,7 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="Dependency Import" basedir=".">
-    <property name="libdir" value="lib" />
     
     <!-- 3rd party dependencies -->
-    <property name="mysql-connector.jar" value="${libdir}/mysql-connector-java-5.1.18-bin.jar" />
+    <property name="mysql-connector.jar" value="${libdir}/mysql/mysql-connector-java-5.1.18-bin.jar" />
+
+    <property name="spring-asm.jar" value="${libdir}/spring/org.springframework.asm-3.0.6.RELEASE.jar" />
+    <property name="spring-beans.jar" value="${libdir}/org.springframework.beans-3.0.6.RELEASE.jar" />
+    <property name="spring-context.jar" value="${libdir}/spring/org.springframework.context-3.0.6.RELEASE.jar" />
+    <property name="spring-core.jar" value="${libdir}/spring/org.springframework.core-3.0.6.RELEASE.jar" />
+    <property name="spring-web.jar" value="${libdir}/spring/org.springframework.web-3.0.6.RELEASE.jar" />
+
+
+    <path id="spring.libs">
+        <pathelement location="${spring-asm.jar}" />
+        <pathelement location="${spring-beans.jar}" />
+        <pathelement location="${spring-context.jar}" />
+        <pathelement location="${spring-core.jar}" />
+        <pathelement location="${spring-web.jar}" />
+    </path>
+
+    <path id="mysql.libs">
+        <pathelement location="${mysql-connector.jar}" />
+    </path>
+
+    <path id="buildlibs">
+        <path refid="spring.libs" />
+        <path refid="mysql-connector.libs" />
+    </path>
 </project>
