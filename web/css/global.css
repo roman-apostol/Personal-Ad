@@ -49,6 +49,10 @@ time, mark, audio, video {
   font: inherit;
   vertical-align: baseline;
   }
+  
+html, body {
+  height: 100%;
+}
 
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
   display: block;
@@ -96,7 +100,7 @@ small { font-size: 80%; }
 
 /* 4. LINKS
 ----------------------------------------------------------------------------------------*/
-a, a:visited { outline: none; color: #B5BFC6; text-decoration: none;}  
+a, a:visited { outline: none; color: #546374; text-decoration: none; font-weight: bold;}  
 a:hover { outline: none; text-decoration:none; }  
 a:active, a:focus { outline: none; }
 
@@ -116,13 +120,14 @@ header.header a.logo{
 	font-size: 110%;
 	background: url('../images/logo_bl.png') no-repeat left center;
 	padding-left: 3em;
-	padding-top: 1em;
+	padding-top: 0.5em;
+    color: #B5BFC6;
 }
 
 nav.menu{
 	width: 100%;
 	display: block;
-	margin-bottom: 2em;
+	margin-bottom: 1.5em;
 }
 nav ul {
 	margin:0 5% ;
@@ -130,17 +135,17 @@ nav ul {
 	
 }
 nav ul li {
-	padding-top: 2.2em;
+	padding-top: 1.5em;
 	padding-right: 5%;
 	display: inline-block;
-		
 }
-nav ul li a {text-transform: uppercase;}
-nav ul li a:hover{border-bottom: 4px solid #546374;}
+nav ul li a {text-transform: uppercase; color: #B5BFC6;}
+nav ul li a:hover{border-bottom: 4px solid #B5BFC6; color: #B5BFC6 !important;}
 
 #journal nav ul li.n-journal a, #photos nav ul li.n-photos a, #portfolio nav ul li.n-portfolio a, #contact nav ul li.n-contact a, #infos nav ul li.n-infos a, #services nav ul li.n-services a, #ratings nav ul li.n-ratings a{
-	border-bottom: 4px solid #546374;
+	border-bottom: 4px solid #B5BFC6; color: #B5BFC6 !important;
 }
+
 p.intro {
 	clear: both;
 	padding: 1em 2em;
