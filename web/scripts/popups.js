@@ -1,5 +1,11 @@
 //additional properties for jQuery object
 $(document).ready(function() {
+$.ajaxSetup({
+    'beforeSend' : function(xhr) {
+        xhr.overrideMimeType('text/html; charset=UTF-8');
+    },
+});
+
     $.get("./popup_login.html", function(data) {
         $("#popup_login_ajax").html(data);
     });
