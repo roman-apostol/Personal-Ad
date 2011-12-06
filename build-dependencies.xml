@@ -11,6 +11,13 @@
     <property name="spring-web.jar" value="${libdir}/spring/org.springframework.web-3.0.6.RELEASE.jar" />
     <property name="spring-expression.jar" value="${libdir}/spring/org.springframework.expression-3.0.6.RELEASE.jar" />
 
+    <property name="struts2-spring-plugin.jar" value="${libdir}/struts/struts2-spring-plugin-2.2.3.1.jar" />
+    <property name="struts2-core.jar" value="${libdir}/struts/struts2-core-2.2.3.1.jar" />
+    <property name="xwork-core.jar" value="${libdir}/struts/xwork-core-2.2.3.1.jar" />
+    <property name="commons-lang.jar" value="${libdir}/struts/commons-lang-2.5.jar" />
+    <property name="commons-fileupload.jar" value="${libdir}/struts/commons-fileupload-1.2.2.jar" />
+    <property name="freemarker.jar" value="${libdir}/struts/freemarker-2.3.16.jar" />
+    <property name="ognl.jar" value="${libdir}/struts/ognl-3.0.1.jar" />
 
     <path id="spring.libs">
         <pathelement location="${spring-asm.jar}" />
@@ -25,8 +32,19 @@
         <pathelement location="${mysql-connector.jar}" />
     </path>
 
+    <path id="struts.libs">
+        <pathelement location="${struts2-spring-plugin.jar}" />
+        <pathelement location="${struts2-core.jar}" />
+        <pathelement location="${xwork-core.jar}" />
+        <pathelement location="${commons-lang.jar}" />
+        <pathelement location="${commons-fileupload.jar}" />
+        <pathelement location="${freemarker.jar}" />
+        <pathelement location="${ognl.jar}" />
+    </path>
+
     <path id="buildlibs">
         <path refid="spring.libs" />
         <path refid="mysql-connector.libs" />
+        <path refid="struts.libs" />
     </path>
 </project>
