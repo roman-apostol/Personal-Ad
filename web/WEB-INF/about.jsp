@@ -51,12 +51,12 @@
 
 <aside style="max-width: 12em;">
 <ul id="nav_categories" class="nav_categories">
-    <li><a href="about.html#howitworks">Як це працює?</a>
-    <li><a href="about.html#solution">Про проект</a>
-    <li><a href="about.html#oferta">Юридичні аспекти</a>
-    <li><a href="about.html#popular">Що таке популярна сторінка</a>
-    <li><a href="about.html#rules">Правила</a>
-    <li><a href="about.html#contacts">Контакти</a>
+    <li><a href="#howitworks">Як це працює?</a>
+    <li><a href="#solution">Про проект</a>
+    <li><a href="#oferta">Юридичні аспекти</a>
+    <li><a href="#popular">Що таке популярна сторінка</a>
+    <li><a href="#rules">Правила</a>
+    <li><a href="#contacts">Контакти</a>
 </ul>
 </aside>
 
