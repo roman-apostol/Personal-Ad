@@ -1,55 +1,19 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html class="js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths wf-ffunitslabweb1ffunitslabweb2-n4-active wf-active" lang="en"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta charset="utf-8">
-<title>БрендЛаверс</title>
-
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-
-<link rel="stylesheet" href="./css/global.css" media="all">
-<link rel="stylesheet" href="./css/layout.css" media="all and (min-width: 33.236em)">
-<link rel="stylesheet" href="./css/master.css" media="all">
-<!-- 30em + (1.618em * 2) = 33.236em / Eliminates potential of horizontal scrolling in most cases -->
-
-<!--[if (lt IE 9) & (!IEMobile)]>
-<link rel="stylesheet" href="http://jaypegams.com/?css=embed/layout.v.1320512585" media="all">
-<![endif]-->
-
-<script type="text/javascript" src="./scripts/jquery-1.7.min.js"></script>
-<script type="text/javascript" src="http://loginza.ru/js/widget.js"></script>
-<script type="text/javascript" src="./scripts/modernizr-1.7.min.js"></script>
-<script type="text/javascript" src="./scripts/popups.js"></script>
-<script type="text/javascript" src="http://use.typekit.com/tux8gcf.js"></script>
-<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-
-  
+<head>
+    <jsp:include page="includes/htmlhead.jsp" />
 </head>
 
 <body id="home">
+  
+<jsp:include page="includes/header.jsp"/>
 
 <div id="opaco" class="hidden"></div>
 <div id="popup" class="hidden" style="left:50%; top:50%;"></div>
 <div id="popup_login_ajax" class="hidden"></div>
 <div id="popup_quicksubmit_ajax" class="hidden"></div>
-  
-<header class="header container cf"  style="font-family: pt-sans-caption; font-size:130%; color:#B5BFC6 !important;">
-    <a href="index.html" class="logo" style="font-weight: normal;">БрендЛаверс</a>
-    <nav class="menu">
-    	<ul class="grid_2">
-    		<li class="n-portfolio"><a style="color:#B5BFC6;font-weight: normal;" href="./brands.html">Бренди</a></li>
-            
-    		<!--li class="n-ratings"><a href="./ratings.html">Рейтинг</a></li-->
-            
-    		<li class="n-infos"><a style="color:#B5BFC6;font-weight: normal;" href="./about.html">Про проект</a></li>
-    
-    		<!--li class="n-journal"><a href=".">Правила</a></li-->
-            
-            <li class="n-services"><a id="text-user" href="#" onClick="$('#popup_login').togglePopup(); return false;" style="font-weight: normal; color:#B5BFC6;">Увійти</a></li>
-            
-            <li class="n-services"><a id="text-user" href="#" onClick="$('#popup_quicksubmit').togglePopup(); return false;" style="font-weight: normal; color:#B5BFC6;">З</a></li>
-   
-    </ul></nav>
-</header>
+
 
 <footer class="footer cf" style="padding-bottom:0.5em; min-height:80%;">
 
@@ -57,24 +21,24 @@
  
  <ul class="folio container cf">
  
-   	<li>
-   		<a href=".">
-   			<span>+3 гривні</span>
-   			<img src="./images/post-hugarden01.png">
-   			
-   		</a>
-   	</li>
+       <li>
+           <a href=".">
+               <span>+3 гривні</span>
+               <img src="./images/post-hugarden01.png">
+               
+           </a>
+       </li>
     
     <br/>
  
-   	<li style="float:right">
-   		<a href=".">
+       <li style="float:right">
+           <a href=".">
         Запости фотографію себе з ноутом Apple і підпиши, що ти відчуваєш, коли торкаєшся його металевих деталей
-   			<!--span>+5 гривень</span>
-   			<img src="./images/post-hugarden02.png"-->
-   			
-   		</a>
-   	</li>
+               <!--span>+5 гривень</span>
+               <img src="./images/post-hugarden02.png"-->
+               
+           </a>
+       </li>
     
     <br/>
     <br/>
@@ -82,79 +46,79 @@
     
     
     <li style="float:center; margin-top:2em; margin-left:5em">
-   		<a href=".">
-   			<span>+9 гривень</span>
-   			<img src="./images/post-hugarden03.png">
-   			
-   		</a>
-   	</li>
-    	
+           <a href=".">
+               <span>+9 гривень</span>
+               <img src="./images/post-hugarden03.png">
+               
+           </a>
+       </li>
+        
    </ul>
 
    <div id="main" role="main" class="container cf">
-		<!--div class="posts">
-		
-		<h1>From the <a href="http://jaypegams.com/journal">Journal</a> ...</h1>
-		
-   		<article>
-   			
-   			<header>
-   			<h2><a href="http://jaypegams.com/post/jaypegams_relaunched">Jaypegams relaunched</a></h2>
-   			<p class="date">Sun 06, 2011</p>
-   			</header>
-   			<div class="post_body">
-   			<img src="./files/jaype.png" alt="Jaypegams relaunched">
-   			<p>I’m proud to release this new version of my personal website and portfolio. It will serve me as a blog / portfolio / pictures repository.&nbsp; It’s still not completely finished, I still need to polish a few things here and there. You can still expect a few changes.</p>   			
-   			<a href="http://jaypegams.com/post/jaypegams_relaunched" class="readmore">Continue reading</a>
-   			</div>
-   		</article>
-   		
-   		
-   		   		
-   		
-   		    		
-   		
-   		
-   	</div>
-   	
-   	<aside class="recent">
-   		<h3>Latest Articles</h3>
-   		
-   		<ul>
-   		
-   			<li><h2><a href="http://jaypegams.com/post/steve_jobs_is_dead">Steve Jobs is dead</a></h2></li>
-   		
-   			<li><h2><a href="http://jaypegams.com/post/my_next_bike_a_dahon_mu_uno">My next bike a Dahon Mu Uno</a></h2></li>
-   		
-   			<li><h2><a href="http://jaypegams.com/post/surya_team_ecological_and_humanitarian_projects">Surya Team ecological and humanitarian projects</a></h2></li>
-   		
-   		</ul>
-   		
-   		<p>See more in the <a href="http://jaypegams.com/archives">archives</a> </p>
-   		
-   		
-   	</aside-->
-   	
-   	<!--div id="services"> THIS IS GOOD!
-   	<h1><a href="http://jaypegams.com/portfolio">What I do</a> and how I do it... </h1>
-   		<img src="./files/illustration_jaype.png" alt="">
-   		<div class="column">
-   		<h3>Research</h3>
-   		<p>Research is an important part of any website creation. Collecting information about your brand in order to build the best possible concept.</p>
-   		<p> Questions will be flying around so we are as clear as possible as to what you like the outcome to be.</p>
-   		</div>
-   		<div class="column">
-   		<h3>Design &amp; code</h3>
-   		<p>Design and code are very close as I do most of my designs in the browsers. Photoshop and Illustrator are not appropriate tools to create sites that are firstly meant to be read not seen. </p>
-   		<p>I can code beautiful design and design beautiful code.</p>
-   		</div>
-   		<div class="column">
-   		<h3>Launch &amp; manage</h3>
-   		<p>This is the moment of truth when your brand will be revealed to the world. It is important to do it right and I can help you get where you want to go.</p>
-   		
-   		</div>
-   	</div-->
-   	<!--h1>Не тормози! Отримай кеш прямо зараз! <a href="./brands.html">представляй бренди!</a></h1-->
+        <!--div class="posts">
+        
+        <h1>From the <a href="http://jaypegams.com/journal">Journal</a> ...</h1>
+        
+           <article>
+               
+               <header>
+               <h2><a href="http://jaypegams.com/post/jaypegams_relaunched">Jaypegams relaunched</a></h2>
+               <p class="date">Sun 06, 2011</p>
+               </header>
+               <div class="post_body">
+               <img src="./files/jaype.png" alt="Jaypegams relaunched">
+               <p>I’m proud to release this new version of my personal website and portfolio. It will serve me as a blog / portfolio / pictures repository.&nbsp; It’s still not completely finished, I still need to polish a few things here and there. You can still expect a few changes.</p>               
+               <a href="http://jaypegams.com/post/jaypegams_relaunched" class="readmore">Continue reading</a>
+               </div>
+           </article>
+           
+           
+                      
+           
+                       
+           
+           
+       </div>
+       
+       <aside class="recent">
+           <h3>Latest Articles</h3>
+           
+           <ul>
+           
+               <li><h2><a href="http://jaypegams.com/post/steve_jobs_is_dead">Steve Jobs is dead</a></h2></li>
+           
+               <li><h2><a href="http://jaypegams.com/post/my_next_bike_a_dahon_mu_uno">My next bike a Dahon Mu Uno</a></h2></li>
+           
+               <li><h2><a href="http://jaypegams.com/post/surya_team_ecological_and_humanitarian_projects">Surya Team ecological and humanitarian projects</a></h2></li>
+           
+           </ul>
+           
+           <p>See more in the <a href="http://jaypegams.com/archives">archives</a> </p>
+           
+           
+       </aside-->
+       
+       <!--div id="services"> THIS IS GOOD!
+       <h1><a href="http://jaypegams.com/portfolio">What I do</a> and how I do it... </h1>
+           <img src="./files/illustration_jaype.png" alt="">
+           <div class="column">
+           <h3>Research</h3>
+           <p>Research is an important part of any website creation. Collecting information about your brand in order to build the best possible concept.</p>
+           <p> Questions will be flying around so we are as clear as possible as to what you like the outcome to be.</p>
+           </div>
+           <div class="column">
+           <h3>Design &amp; code</h3>
+           <p>Design and code are very close as I do most of my designs in the browsers. Photoshop and Illustrator are not appropriate tools to create sites that are firstly meant to be read not seen. </p>
+           <p>I can code beautiful design and design beautiful code.</p>
+           </div>
+           <div class="column">
+           <h3>Launch &amp; manage</h3>
+           <p>This is the moment of truth when your brand will be revealed to the world. It is important to do it right and I can help you get where you want to go.</p>
+           
+           </div>
+       </div-->
+       <!--h1>Не тормози! Отримай кеш прямо зараз! <a href="./brands.html">представляй бренди!</a></h1-->
     
    </div>
 </footer>
