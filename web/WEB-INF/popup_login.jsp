@@ -1,4 +1,5 @@
-﻿<div id="popup_login" class="hidden">
+﻿<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<div id="popup_login" class="hidden">
     <div class="popup_div" id="popup_login_div">
     <h1 style="font-size: 2em; color: #546374;">Обери метод доступу</h1>
     <iframe src="http://loginza.ru/api/widget?overlay=loginza&token_url=http://localhost/&providers_set=facebook,twitter,vkontakte,flickr&lang=uk" style="width:359px;height:300px;" scrolling="no" frameborder="no"></iframe>

@@ -1,3 +1,4 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <div id="popup_quicksubmit" class="hidden">
     <div id="popup_quicksubmit_div" class="popup_div" style="min-width:450px;">
     <h1 style="font-size: 2em; color: #546374;">Швидка заявка</h1>

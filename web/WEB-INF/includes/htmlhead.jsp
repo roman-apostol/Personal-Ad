@@ -6,7 +6,6 @@
   - It includes main css and javascript files.
   -
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <meta charset="utf-8">
 <title>БрендЛаверс</title>
 

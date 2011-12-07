@@ -14,7 +14,16 @@
 
     <package name="default" extends="struts-default" namespace="/">
         <action name="home" class="com.personal.ad.action.Home">
-            <result name="success">/WEB-INF/index.jsp</result>
+            <result >/WEB-INF/index.jsp</result>
+        </action>
+
+        <action name="about" class="com.personal.ad.action.About">
+            <result >/WEB-INF/about.jsp</result>
+        </action>
+
+        <action name="brands" class="com.personal.ad.action.Brands">
+            <result >/WEB-INF/brands.jsp</result>
         </action>
     </package>
+    
 </struts>

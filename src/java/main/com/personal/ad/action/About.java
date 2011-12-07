@@ -3,7 +3,7 @@ package com.personal.ad.action;
 import com.opensymphony.xwork2.ActionSupport;
 
 /**
- * <p>A Struts2 action used to process incoming request for the home page</p>
+ * <p>A Struts2 action used to process incoming request for the about us page</p>
  * 
  * <p>
  * Version 1.0.0 Change notes:
@@ -16,10 +16,10 @@ import com.opensymphony.xwork2.ActionSupport;
  * @author roman.apostol
  * @version 1.0.0
  */
-public class Home extends ActionSupport {
+public class About extends ActionSupport {
 	
 	/**
-	 * <p>Handles the incoming request to the home page. No business logic in this implementation</p>
+	 * <p>Handles the incoming request to the About Us page. No business logic in this implementation</p>
 	 */
 	@Override
 	public String execute() throws Exception {
