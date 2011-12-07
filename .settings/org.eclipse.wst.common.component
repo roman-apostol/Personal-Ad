@@ -2,7 +2,7 @@
 <project-modules id="moduleCoreId" project-version="1.5.0">
     <wb-module deploy-name="PersonalAd">
         <wb-resource deploy-path="/" source-path="/web"/>
-        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/java/main"/>
         <property name="context-root" value="/"/>
         <property name="java-output-path" value="/PersonalAd/build/classes"/>
     </wb-module>

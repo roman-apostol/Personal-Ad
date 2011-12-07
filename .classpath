@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="src/java/main"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jre6">
 		<attributes>
 			<attribute name="owner.project.facets" value="java"/>
@@ -20,5 +20,6 @@
 	<classpathentry kind="lib" path="lib/spring/org.springframework.beans-3.0.6.RELEASE.jar"/>
 	<classpathentry kind="lib" path="lib/spring/org.springframework.web-3.0.6.RELEASE.jar"/>
 	<classpathentry kind="lib" path="lib/spring/org.springframework.expression-3.0.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/struts/xwork-core-2.2.3.1.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>

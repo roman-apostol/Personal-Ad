@@ -44,7 +44,7 @@
 
     <path id="buildlibs">
         <path refid="spring.libs" />
-        <path refid="mysql-connector.libs" />
+        <path refid="mysql.libs" />
         <path refid="struts.libs" />
     </path>
 </project>
