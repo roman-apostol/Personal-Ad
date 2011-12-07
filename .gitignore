@@ -2,4 +2,3 @@ build
 *.bak
 *.properties
 .DS_Store
-taxiapp
