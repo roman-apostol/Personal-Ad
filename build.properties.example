@@ -1,2 +1,11 @@
-# This file is an example of build.properties file which holds build specific properties.
-jboss.home=c:\jboss-5.1.0.GA
+###########################################################################################
+# This file is an example of build.properties file which holds build specific properties. #
+###########################################################################################
+jboss.home=PATH_TO_JBOSS
+
+##########################
+# properties to setup db #
+##########################
+mysql.server=YOUR_HOST (e.g. localhost)
+mysql.user=YOUR_USER (e.g. root)
+mysql.pass=YOUR_PASS
