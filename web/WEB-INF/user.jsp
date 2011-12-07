@@ -18,18 +18,14 @@
      <a href="/home" class="logo">БрендЛаверс</a>
      
     <nav class="menu">
-    	<ul class="grid_2">
-    		<li class="n-portfolio"><a href="./brands.html">Бренди</a></li>
+        <ul class="grid_2">
+            <li class="n-portfolio"><a href="./brands.html">Бренди</a></li>
             
-    		<!--li class="n-ratings"><a href="./ratings.html">Рейтинг</a></li-->
             
-    		<li class="n-infos"><a href="./about.html">Про проект</a></li>
-    
-    		<!--li class="n-journal"><a href=".">Правила</a></li-->
-            
+            <li class="n-infos"><a href="./about.html">Про проект</a></li>
+                
             <li class="n-services"><a id="text-user" href="#" onCLick="$('#popup_login').togglePopup(); return false;">Увійти</a></li>
     
-    		<!--li class="n-photos"><a href="http://jaypegams.com/photos"></a></li-->
    
     </ul></nav>
 
@@ -38,8 +34,8 @@
  </header>
 
 <div id="blog" class="container cf">
-<p>Інформація про виконані завдання та підписані кампанії</p>	
-</div>			
+<p>Інформація про виконані завдання та підписані кампанії</p>    
+</div>
 
 
 </body></html>

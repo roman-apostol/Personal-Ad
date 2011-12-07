@@ -17,7 +17,7 @@
 
 <footer class="footer cf" style="padding-bottom:0.5em; min-height:80%;">
 
- <p class="intro" style="max-width:25em;">Привіт! Маєш <a href="./about.html#popular">популярну сторінку</a> на Вконтакті, Фейсбуці або блог? Спілкуйся про <a href="./brands.html">улюблені бренди</a> і отримуй різноманітні заохочення! Це ж так просто - поміняв статус - отримав поповнення мобільного рахунку!</p>
+ <p class="intro" style="max-width:25em;">Привіт! Маєш <a href="./about.action#popular">популярну сторінку</a> на Вконтакті, Фейсбуці або блог? Спілкуйся про <a href="./brands.action">улюблені бренди</a> і отримуй різноманітні заохочення! Це ж так просто - поміняв статус - отримав поповнення мобільного рахунку!</p>
  
  <ul class="folio container cf">
  
