@@ -20,3 +20,14 @@
             <li class="n-services"><a id="text-user" href="#" onClick="$('#popup_quicksubmit').togglePopup(); return false;" style="font-weight: normal; color:#B5BFC6;">З</a></li>
     </ul></nav>
 </header>
+
+<div id="opaco" class="hidden"></div>
+<div id="popup" class="hidden" style="left:50%; top:50%;"></div>
+<div id="popup_login_ajax" class="hidden">
+    <jsp:include page="popup_login.jsp" />
+</div>
+<div id="popup_quicksubmit_ajax" class="hidden">
+    <jsp:include page="popup_quicksubmit.jsp" />
+</div>
+
+

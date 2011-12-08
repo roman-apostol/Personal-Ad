@@ -5,14 +5,7 @@ $.ajaxSetup({
         xhr.overrideMimeType('text/html; charset=UTF-8');
     },
 });
-
-    $.get("./popup_login.html", function(data) {
-        $("#popup_login_ajax").html(data);
-    });
-    $.get("./popup_quicksubmit.html", function(data) {
-        $("#popup_quicksubmit_ajax").html(data);
-    });
-    
+ 
     if (document.referrer.indexOf("loginza") != -1) {
     // assume we have logged in as Taras
         $('#text-user').html("Вітаємо, Тарас Галковський!");

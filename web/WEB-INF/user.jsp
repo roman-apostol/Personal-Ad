@@ -8,10 +8,6 @@
 </head>
 
 <body id="services">
-
-<div id="opaco" class="hidden"></div>
-<div id="popup" class="hidden" style="left:50%; top:50%;"></div>
-<div id="popup_login_ajax" class="hidden"></div>
   
     <header class="header container cf">
     
