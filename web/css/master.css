@@ -1,4 +1,4 @@
-﻿h1 {
+h1 {
     font-size: 2em;
     text-align: center;
 }
@@ -74,6 +74,7 @@ border-bottom:1px solid #999999;
 
 .button {
 	min-width: 120px;
+    min-height: 20px;
 	background-color: rgba(255, 255, 255, 0.05) !important;
 	border:1px solid #546374;
 	display:inline-block;
@@ -84,6 +85,8 @@ border-bottom:1px solid #999999;
 	padding:3px 14px;
 	text-decoration:none;
 	text-align:center;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 .right {
@@ -99,6 +102,7 @@ border-bottom:1px solid #999999;
 }
 
 .textedit {
+    min-height: 20px;
 	background-color: rgba(0, 0, 0, 0.15);
 	border:1px solid #546374;
 	display:inline-block;
@@ -108,6 +112,8 @@ border-bottom:1px solid #999999;
 	font-weight:normal;
 	padding:3px 3px;
 	text-decoration:none;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 .checkbox {

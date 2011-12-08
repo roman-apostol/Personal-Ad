@@ -2,6 +2,7 @@
 <!DOCTYPE html>
 <html class="js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths wf-ffunitslabweb1ffunitslabweb2-n4-active wf-active" lang="en"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <head>
+    <title>БрендЛаверс</title>	
     <jsp:include page="includes/htmlhead.jsp" />
 </head>
 
@@ -53,6 +54,21 @@
    </div>
 </footer>
 
-<jsp:include page="includes/footer.jsp"/>
+<header class="header cf" style="display:block; text-align:center; margin-left:auto; margin-right:auto; width: 1550px; margin-top:1em; margin-bottom:1em;">
+  <!--div style="display:block; text-align:center; margin-left:auto; margin-right:auto; width: 1150px; margin-top:-1em; margin-bottom:0em;"-->
+    <img src="./images/brand-kyivstar.png" height="30px">
+    <img src="./images/brand-epicentr.png" height="30px">
+    <img src="./images/brand-ryaba.png" height="30px">
+    <img src="./images/brand-life.png" height="30px">
+    <img src="./images/brand-okko.png" height="30px">
+    <img src="./images/brand-atb.png" height="30px">
+    <img src="./images/brand-avk.png" height="30px">
+    <img src="./images/brand-obolon.png" height="30px">
+    <img src="./images/brand-korona.png" height="30px">
+    <img src="./images/brand-vkyshenya.png" height="30px">
+    <img src="./images/brand-axe.png" height="30px">
+    <img src="./images/brand-hooegaarden.png" height="30px">
+ <!--/div-->
+</header>
 
 </body></html>

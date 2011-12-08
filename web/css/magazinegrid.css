@@ -1,4 +1,4 @@
-﻿article,aside,figure,footer,header,hgroup,nav,section {
+article,aside,figure,footer,header,hgroup,nav,section {
 	display: block;
 }
 section {
@@ -110,8 +110,11 @@ hr {
 }
 blockquote {
 	font: bold 24px/22px Helvetica;
-	color: #000;
-	border-top: 6px solid #111;
+/*	color: #000;*/
+	border-left: 6px solid ;
 	margin-top: 16px;
-	padding: 5px 0 39px 0;
+    margin-left: 16px;
+	/*padding: 5px 0 39px 0;*/
+    padding: 0 0 0 16px;
+    line-height: 125%;
 }
