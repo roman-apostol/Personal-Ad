@@ -6,11 +6,6 @@
     <jsp:include page="includes/htmlhead.jsp" />    
 </head>
 
-<div id="opaco" class="hidden"></div>
-<div id="popup" class="hidden" style="left:50%; top:50%;"></div>
-<div id="popup_login_ajax" class="hidden">
-<jsp:include page="popup_login.jsp"></div>
-
 <body id="portfolio">
   
 <jsp:include page="includes/header.jsp"/>
