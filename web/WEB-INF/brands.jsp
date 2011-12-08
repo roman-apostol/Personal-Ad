@@ -22,7 +22,7 @@
     <a style="branddesc">Предмет:</a> статуси та нотатки в соц мережах<br/>
     <a style="branddesc">Винагорода:</a> футболки<br/>
     <a class="button"><input type="checkbox" /> підписатися</a>
-    <a class="button right" href="brand_detailed?brand=chernigivske">деталі</a>
+    <a class="button right" href="brand_detail?brand=chernigivske">деталі</a>
   </p>
   <p class="grid x3">
 <img src = "./images/ChernigivskeSvitle1.png" class="left" style="margin:0 10px 0 0; height:100px;" />
@@ -30,7 +30,7 @@
     <a style="branddesc">Предмет:</a> статуси в ВКонтакті<br/>
     <a style="branddesc">Винагорода:</a> кришечки<br/>
     <a class="button"><input type="checkbox" /> підписатися</a>
-    <a class="button right" href="brand_detailed?brand=axe">деталі</a>
+    <a class="button right" href="brand_detail?brand=axe">деталі</a>
   </p>
 </section>
 <section>
@@ -40,7 +40,7 @@
     <a style="branddesc">Предмет:</a> чекін в соц мережах<br/>
     <a style="branddesc">Винагорода:</a> купон на знижку<br/>
     <a class="button"><input type="checkbox" /> підписатися</a>
-    <a class="button right" href="#">деталі</a>
+    <a class="button right" href="brand_detail?brand=axe">деталі</a>
   </p>
 </section>
 <hr/>
@@ -52,14 +52,14 @@
     <a style="branddesc">Бренд:</a> Axe<br/>
     <a style="branddesc">Предмет:</a> статуси та нотатки в соц мережах<br/>
     <a style="branddesc">Винагорода:</a> футболки<br/>
-    <a class="button right" href="#">деталі</a>
+    <a class="button right" href="brand_detail?brand=axe">деталі</a>
   </p>
   <p class="grid x3">
 <img src = "./images/ChernigivskeSvitle1.png" class="left" style="margin:0 10px 0 0; height:100px;" />
     <a style="branddesc">Бренд:</a> Чернігівське<br/>
     <a style="branddesc">Предмет:</a> статуси в ВКонтакті<br/>
     <a style="branddesc">Винагорода:</a> кришечки<br/>
-    <a class="button right" href="#">деталі</a>
+    <a class="button right" href="brand_detail?brand=axe">деталі</a>
   </p>
 </section>
 <section>
@@ -68,7 +68,7 @@
     <a style="branddesc">Бренд:</a> МакДональдс<br/>
     <a style="branddesc">Предмет:</a> чекін в соц мережах<br/>
     <a style="branddesc">Винагорода:</a> купон на знижку<br/>
-    <a class="button right" href="#">деталі</a>
+    <a class="button right" href="brand_detail?brand=axe">деталі</a>
   </p>
 </section>
 

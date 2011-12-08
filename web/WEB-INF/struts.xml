@@ -24,6 +24,11 @@
         <action name="brands" class="com.personal.ad.action.Brands">
             <result >/WEB-INF/brands.jsp</result>
         </action>
+
+        <action name="brand_detail" class="com.personal.ad.action.BrandDetail">
+            <result >/WEB-INF/brand_detail.jsp</result>
+        </action>
+
     </package>
     
 </struts>
